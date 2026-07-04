@@ -1,0 +1,37 @@
+VBG technical requirements
+
+
+### Final version
+Frontend (FE): 
+- Android App
+- Multilanguage with i18n
+- All Texts with translation keys
+
+Backend (BE): 
+- Business Logic (BL)
+- Rest API to expose BL
+- API Documentation with OpenApi/Swagger
+- JWT Authentication
+- SQL Database (DB)
+
+Github Repo:
+- All Code and Config must be hosted at Github
+- Admins of VBG must have access to the code
+
+Deployment:
+- FE: Google Play Store
+- BE & DB
+	to VPS Provider
+	Buy Domain Name: e.g. sentinelle-vbg.org
+	host BE & DB to subdomain e.g. api.sentinelle-vbg.org 
+	Configure HTTPS
+	
+VBG functional requirements:
+- Create/Update/Delete/Show Cases
+- Dashboard with 
+ general Statistics: 
+	general number of cases
+	number of cases per criminal type
+ quick possibility to create case
+- Notify via Whatsapp on new case creation
+- ... see vbg-functionality.docx
