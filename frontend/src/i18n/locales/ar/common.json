@@ -1,0 +1,244 @@
+{
+  "app": {
+    "title": "تتبع حالات العنف القائم على النوع الاجتماعي - CSVVDH",
+    "tagline": "الإبلاغ عن حالات العنف القائم على النوع الاجتماعي ومتابعتها"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "loginButton": "دخول",
+    "loginError": "اسم المستخدم أو كلمة المرور غير صحيحة",
+    "logout": "تسجيل الخروج"
+  },
+  "language": {
+    "label": "اللغة"
+  },
+  "newCase": {
+    "navLink": "حالة جديدة",
+    "title": "الإبلاغ عن حالة جديدة",
+    "back": "السابق",
+    "next": "التالي",
+    "submit": "حفظ",
+    "submitError": "حدث خطأ أثناء حفظ الحالة",
+    "noReferralStructures": "يرجى أولاً اختيار الموقع",
+    "stepProgress": "الخطوة {{current}} من {{total}}",
+    "steps": {
+      "violenceType": "نوع العنف",
+      "location": "الموقع",
+      "dateTime": "التاريخ والوقت",
+      "victimSituation": "وضعية الضحية",
+      "details": "التفاصيل",
+      "referralStructure": "جهة الإحالة",
+      "review": "المراجعة"
+    },
+    "fields": {
+      "violenceType": "نوع العنف",
+      "region": "المنطقة",
+      "incidentAt": "تاريخ ووقت الحادثة",
+      "alias": "الاسم المستعار للضحية",
+      "aliasHelp": "اختياري - يستخدم بدلاً من الاسم الحقيقي",
+      "ageRange": "الفئة العمرية",
+      "sex": "الجنس",
+      "contactPhone": "هاتف للتواصل",
+      "contactPhoneHelp": "اختياري",
+      "relationshipToPerpetrator": "العلاقة بالجاني المزعوم",
+      "perpetratorKnown": "الجاني المزعوم معروف لدى الضحية",
+      "cohabitingWithPerpetrator": "الضحية تعيش مع الجاني المزعوم",
+      "vulnerabilityFactors": "عوامل الضعف",
+      "safetyRisk": "مستوى الخطر",
+      "description": "وصف الحالة",
+      "measuresTaken": "الإجراءات المتخذة",
+      "referralStructure": "جهة الإحالة"
+    },
+    "ageRange": {
+      "under_12": "أقل من 12 سنة",
+      "12_17": "12 إلى 17 سنة",
+      "18_25": "18 إلى 25 سنة",
+      "26_40": "26 إلى 40 سنة",
+      "41_60": "41 إلى 60 سنة",
+      "over_60": "أكثر من 60 سنة"
+    },
+    "sex": {
+      "female": "أنثى",
+      "male": "ذكر",
+      "other": "آخر"
+    },
+    "relationship": {
+      "family_member": "فرد من العائلة",
+      "intimate_partner": "شريك حميم",
+      "acquaintance": "معرفة",
+      "stranger": "غريب",
+      "authority_figure": "شخصية ذات سلطة",
+      "other": "آخر"
+    },
+    "vulnerabilityFactor": {
+      "minor": "قاصر",
+      "disability": "إعاقة",
+      "pregnant": "حامل",
+      "displaced_refugee": "نازح أو لاجئ",
+      "other": "آخر"
+    },
+    "safetyRisk": {
+      "low": "منخفض",
+      "medium": "متوسط",
+      "high": "مرتفع"
+    }
+  },
+  "caseStatus": {
+    "new": "جديد",
+    "acknowledged": "تم الاعتراف به",
+    "in_process": "قيد المعالجة",
+    "closed": "مغلق"
+  },
+  "followUpOutcome": {
+    "community_resolution": "حل مجتمعي",
+    "referred_to_justice": "أحيل إلى العدالة",
+    "in_process": "قيد المعالجة",
+    "other": "آخر"
+  },
+  "auditAction": {
+    "create": "إنشاء",
+    "view": "اطلاع",
+    "update": "تعديل",
+    "status_change": "تغيير الحالة",
+    "delete": "حذف"
+  },
+  "caseList": {
+    "title": "الحالات",
+    "loading": "جارٍ التحميل...",
+    "empty": "لا توجد حالات مطابقة لهذه المعايير",
+    "filters": {
+      "status": "الحالة",
+      "violenceType": "نوع العنف",
+      "region": "المنطقة",
+      "search": "بحث",
+      "all": "الكل"
+    }
+  },
+  "caseDetail": {
+    "notFound": "الحالة غير موجودة",
+    "createdBy": "أُبلغ عنها من قبل",
+    "victimSituation": "وضعية الضحية",
+    "yes": "نعم",
+    "no": "لا",
+    "status": "الحالة",
+    "updateStatus": "تحديث",
+    "acknowledge": "الاعتراف بالحالة",
+    "followUpHistory": "سجل المتابعة",
+    "noFollowUps": "لا توجد متابعة مسجلة",
+    "addFollowUp": "إضافة متابعة",
+    "comment": "تعليق",
+    "outcome": "النتيجة",
+    "submitFollowUp": "حفظ المتابعة",
+    "auditTrail": "سجل التدقيق"
+  },
+  "dashboard": {
+    "navLink": "لوحة التحكم",
+    "title": "لوحة التحكم",
+    "totalCases": "العدد الإجمالي للحالات",
+    "cases": "الحالات",
+    "byRegion": "الحالات حسب المنطقة",
+    "byViolenceType": "الحالات حسب نوع العنف",
+    "byRegionAndType": "الحالات حسب المنطقة ونوع العنف",
+    "noData": "لا توجد بيانات متاحة"
+  },
+  "admin": {
+    "navLink": "الإدارة",
+    "tabs": {
+      "users": "المستخدمون",
+      "regions": "المناطق",
+      "violenceCategories": "أنواع العنف",
+      "referralStructures": "جهات الإحالة",
+      "notificationRecipients": "مستلمو الرسائل النصية",
+      "auditLog": "سجل التدقيق"
+    },
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "saveError": "حدث خطأ أثناء الحفظ. تحقق من الحقول وحاول مرة أخرى.",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "activate": "تفعيل",
+    "deactivate": "تعطيل",
+    "translations": "الترجمات",
+    "addTranslation": "إضافة ترجمة",
+    "locale": "اللغة (الرمز)",
+    "label": "التسمية",
+    "users": {
+      "add": "إضافة مستخدم",
+      "addTitle": "إضافة مستخدم",
+      "editTitle": "تعديل المستخدم",
+      "fullName": "الاسم الكامل",
+      "username": "اسم المستخدم",
+      "password": "كلمة المرور",
+      "passwordOptional": "كلمة مرور جديدة (اتركها فارغة لعدم التغيير)",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "role": "الدور",
+      "region": "المنطقة",
+      "noRegion": "بدون منطقة",
+      "deleteTitle": "حذف المستخدم",
+      "deleteMessage": "هل تريد حقًا حذف {{name}}؟ سيؤدي هذا إلى تعطيل حسابه."
+    },
+    "regions": {
+      "add": "إضافة منطقة",
+      "addTitle": "إضافة منطقة",
+      "editTitle": "تعديل المنطقة",
+      "name": "الاسم",
+      "municipality": "البلدية",
+      "village": "القرية"
+    },
+    "violenceCategories": {
+      "add": "إضافة نوع عنف",
+      "addTitle": "إضافة نوع عنف",
+      "editTitle": "تعديل نوع العنف",
+      "code": "الرمز",
+      "sortOrder": "ترتيب العرض"
+    },
+    "referralStructures": {
+      "add": "إضافة جهة",
+      "addTitle": "إضافة جهة إحالة",
+      "editTitle": "تعديل جهة الإحالة",
+      "type": "النوع",
+      "name": "الاسم",
+      "region": "المنطقة",
+      "contactPhone": "هاتف التواصل",
+      "contactEmail": "البريد الإلكتروني للتواصل"
+    },
+    "notificationRecipients": {
+      "add": "إضافة مستلم",
+      "addTitle": "إضافة مستلم رسائل نصية",
+      "editTitle": "تعديل مستلم الرسائل النصية",
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "region": "المنطقة",
+      "violenceType": "نوع العنف",
+      "allRegions": "جميع المناطق",
+      "allViolenceTypes": "جميع أنواع العنف"
+    },
+    "auditLog": {
+      "entityType": "نوع الكيان",
+      "entityId": "معرّف الكيان",
+      "user": "المستخدم",
+      "action": "الإجراء",
+      "timestamp": "التاريخ والوقت",
+      "allUsers": "جميع المستخدمين",
+      "empty": "لا توجد إدخالات مطابقة لهذه المعايير"
+    }
+  },
+  "referralStructureType": {
+    "police": "الشرطة",
+    "gendarmerie": "الدرك",
+    "social_services": "الخدمات الاجتماعية",
+    "health_center": "مركز صحي"
+  },
+  "role": {
+    "community_relay": "مرشد مجتمعي",
+    "regional_director": "مدير إقليمي",
+    "institutional_user": "مستخدم مؤسسي",
+    "administrator": "مسؤول"
+  }
+}

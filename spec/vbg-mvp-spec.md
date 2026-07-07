@@ -81,12 +81,15 @@ The interface should remain intuitive for users with limited literacy.
 
 # Multilingual Support
 
-Texts should be managed through an internationalization (i18n) system, allowing additional languages to be added in the future.
+Texts should be managed through an internationalization (i18n) system (translation keys, no hardcoded language list), allowing additional languages to be added later without code changes.
 Initial languages:
 
 - French (Default)
-- English
 - Arabic
+- Pulaar
+- Wolof
+- Soninké
+- English (for administrators/technical partners)
 
 ---
 
@@ -99,6 +102,7 @@ Initial languages:
 - View own cases
 - Edit own cases (allowed once status reaches Acknowledged; locked once Closed)
 - View case status
+- Access own dashboard / statistics (own cases only)
 
 ---
 
@@ -160,7 +164,7 @@ Initial languages:
 - Measures taken
 - Referral structure
 - Status (see Case Status)
-- Follow-up history
+- Follow-up history (see Follow-up Entry)
 
 ---
 
@@ -170,6 +174,17 @@ Initial languages:
 - Acknowledged
 - InProcess
 - Closed
+
+---
+
+## Follow-up Entry
+
+Each entry in a Case's follow-up history. Distinct from Case Status (system workflow stage): Outcome is the qualitative result recorded by whoever is following up.
+
+- Author (User)
+- Timestamp
+- Comment
+- Outcome (Community resolution / Referred to justice / Case in process / Other)
 
 ---
 
@@ -197,14 +212,19 @@ Linked 1:1 to Case. Identity kept minimal to protect the survivor.
 
 ## Violence Categories
 
-Master data (multilingual)
+Master data (multilingual), managed by Administrator (initial seed list below, editable/extendable without code changes)
 
 - Physical violence
 - Sexual violence
-- Psychological violence
+- Psychological / verbal violence
 - Economic violence
+- Denial of access to land or economic resources
+- Denial of children's access to education (due to lack of civil registration)
+- Confiscation of children's civil status documents (family conflict / divorce)
+- Child abandonment / refusal of paternal care
+- Refusal of divorce or other family coercion
 - Female Genital Mutilation (FGM)
-- Sexual harassment
+- Sexual harassment (workplace / school)
 - Other
 
 ---
@@ -215,14 +235,22 @@ Master data (multilingual)
 - Municipality
 - Village (optional)
 
+Initial seed data (3 regions, each with their communes):
+
+- **Nouakchott**: Nord, Est, Sud
+- **Brakna**: Boghé, Dar el Avia, Dar el Barka, o Birom, Bababé, El Vorh, Aéré Mbar, Aleg, Bouhdida
+- **Gorgol**: Kaédi, Djéwol, Belinabé Talhaya
+
 ---
 
 ## Referral Structures
 
-- Police
-- Gendarmerie
-- Social Services
-- Health Center
+Master data, per region. Each entry has a Type plus a specific named contact so notifications can be routed correctly.
+
+- Type: Police / Gendarmerie / Social Services / Health Center
+- Name (specific organization or contact, e.g. "MASEF - Regional Representative", "Medicus Mundi", "CSVVDH Regional Social Worker")
+- Region (link to Regions)
+- Contact phone / email (used for notification routing)
 
 ---
 

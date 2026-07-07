@@ -1,0 +1,244 @@
+{
+  "app": {
+    "title": "VBG - CSVVDH",
+    "tagline": "Gender-based violence case reporting and monitoring"
+  },
+  "auth": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Log in",
+    "loginError": "Incorrect username or password",
+    "logout": "Log out"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "newCase": {
+    "navLink": "New case",
+    "title": "Report a new case",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Save",
+    "submitError": "An error occurred while saving the case",
+    "noReferralStructures": "Please select a location first",
+    "stepProgress": "Step {{current}} of {{total}}",
+    "steps": {
+      "violenceType": "Type of violence",
+      "location": "Location",
+      "dateTime": "Date & time",
+      "victimSituation": "Victim's situation",
+      "details": "Details",
+      "referralStructure": "Referral structure",
+      "review": "Review"
+    },
+    "fields": {
+      "violenceType": "Type of violence",
+      "region": "Region",
+      "incidentAt": "Date & time of the incident",
+      "alias": "Victim's alias",
+      "aliasHelp": "Optional - use instead of the real name",
+      "ageRange": "Age range",
+      "sex": "Sex",
+      "contactPhone": "Contact phone",
+      "contactPhoneHelp": "Optional",
+      "relationshipToPerpetrator": "Relationship to alleged perpetrator",
+      "perpetratorKnown": "The alleged perpetrator is known to the victim",
+      "cohabitingWithPerpetrator": "The victim cohabits with the alleged perpetrator",
+      "vulnerabilityFactors": "Vulnerability factors",
+      "safetyRisk": "Safety risk level",
+      "description": "Case description",
+      "measuresTaken": "Measures taken",
+      "referralStructure": "Referral structure"
+    },
+    "ageRange": {
+      "under_12": "Under 12",
+      "12_17": "12 to 17",
+      "18_25": "18 to 25",
+      "26_40": "26 to 40",
+      "41_60": "41 to 60",
+      "over_60": "Over 60"
+    },
+    "sex": {
+      "female": "Female",
+      "male": "Male",
+      "other": "Other"
+    },
+    "relationship": {
+      "family_member": "Family member",
+      "intimate_partner": "Intimate partner",
+      "acquaintance": "Acquaintance",
+      "stranger": "Stranger",
+      "authority_figure": "Authority figure",
+      "other": "Other"
+    },
+    "vulnerabilityFactor": {
+      "minor": "Minor",
+      "disability": "Disability",
+      "pregnant": "Pregnant",
+      "displaced_refugee": "Displaced or refugee",
+      "other": "Other"
+    },
+    "safetyRisk": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    }
+  },
+  "caseStatus": {
+    "new": "New",
+    "acknowledged": "Acknowledged",
+    "in_process": "In progress",
+    "closed": "Closed"
+  },
+  "followUpOutcome": {
+    "community_resolution": "Community resolution",
+    "referred_to_justice": "Referred to justice",
+    "in_process": "In progress",
+    "other": "Other"
+  },
+  "auditAction": {
+    "create": "Created",
+    "view": "Viewed",
+    "update": "Updated",
+    "status_change": "Status changed",
+    "delete": "Deleted"
+  },
+  "caseList": {
+    "title": "Cases",
+    "loading": "Loading...",
+    "empty": "No cases match these criteria",
+    "filters": {
+      "status": "Status",
+      "violenceType": "Type of violence",
+      "region": "Region",
+      "search": "Search",
+      "all": "All"
+    }
+  },
+  "caseDetail": {
+    "notFound": "Case not found",
+    "createdBy": "Reported by",
+    "victimSituation": "Victim's situation",
+    "yes": "Yes",
+    "no": "No",
+    "status": "Status",
+    "updateStatus": "Update",
+    "acknowledge": "Acknowledge case",
+    "followUpHistory": "Follow-up history",
+    "noFollowUps": "No follow-up recorded",
+    "addFollowUp": "Add a follow-up",
+    "comment": "Comment",
+    "outcome": "Outcome",
+    "submitFollowUp": "Save follow-up",
+    "auditTrail": "Audit trail"
+  },
+  "dashboard": {
+    "navLink": "Dashboard",
+    "title": "Dashboard",
+    "totalCases": "Total number of cases",
+    "cases": "Cases",
+    "byRegion": "Cases by region",
+    "byViolenceType": "Cases by type of violence",
+    "byRegionAndType": "Cases by region and type of violence",
+    "noData": "No data available"
+  },
+  "admin": {
+    "navLink": "Administration",
+    "tabs": {
+      "users": "Users",
+      "regions": "Regions",
+      "violenceCategories": "Types of violence",
+      "referralStructures": "Referral structures",
+      "notificationRecipients": "SMS recipients",
+      "auditLog": "Audit log"
+    },
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "saveError": "An error occurred while saving. Check the fields and try again.",
+    "edit": "Edit",
+    "delete": "Delete",
+    "active": "Active",
+    "inactive": "Inactive",
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "translations": "Translations",
+    "addTranslation": "Add a translation",
+    "locale": "Language (code)",
+    "label": "Label",
+    "users": {
+      "add": "Add user",
+      "addTitle": "Add user",
+      "editTitle": "Edit user",
+      "fullName": "Full name",
+      "username": "Username",
+      "password": "Password",
+      "passwordOptional": "New password (leave blank to keep unchanged)",
+      "phone": "Phone",
+      "email": "Email",
+      "role": "Role",
+      "region": "Region",
+      "noRegion": "No region",
+      "deleteTitle": "Delete user",
+      "deleteMessage": "Are you sure you want to delete {{name}}? This will deactivate their account."
+    },
+    "regions": {
+      "add": "Add region",
+      "addTitle": "Add region",
+      "editTitle": "Edit region",
+      "name": "Name",
+      "municipality": "Municipality",
+      "village": "Village"
+    },
+    "violenceCategories": {
+      "add": "Add type of violence",
+      "addTitle": "Add type of violence",
+      "editTitle": "Edit type of violence",
+      "code": "Code",
+      "sortOrder": "Sort order"
+    },
+    "referralStructures": {
+      "add": "Add structure",
+      "addTitle": "Add referral structure",
+      "editTitle": "Edit referral structure",
+      "type": "Type",
+      "name": "Name",
+      "region": "Region",
+      "contactPhone": "Contact phone",
+      "contactEmail": "Contact email"
+    },
+    "notificationRecipients": {
+      "add": "Add recipient",
+      "addTitle": "Add SMS recipient",
+      "editTitle": "Edit SMS recipient",
+      "name": "Name",
+      "phone": "Phone",
+      "region": "Region",
+      "violenceType": "Type of violence",
+      "allRegions": "All regions",
+      "allViolenceTypes": "All types of violence"
+    },
+    "auditLog": {
+      "entityType": "Entity type",
+      "entityId": "Entity ID",
+      "user": "User",
+      "action": "Action",
+      "timestamp": "Date & time",
+      "allUsers": "All users",
+      "empty": "No entries match these criteria"
+    }
+  },
+  "referralStructureType": {
+    "police": "Police",
+    "gendarmerie": "Gendarmerie",
+    "social_services": "Social services",
+    "health_center": "Health center"
+  },
+  "role": {
+    "community_relay": "Community Relay",
+    "regional_director": "Regional Director",
+    "institutional_user": "Institutional User",
+    "administrator": "Administrator"
+  }
+}

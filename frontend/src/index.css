@@ -1,0 +1,11 @@
+/* Theme tokens + utility classes only - preflight is intentionally omitted
+   so it doesn't fight MUI's CssBaseline. MUI owns components/reset, Tailwind
+   owns layout/spacing utilities. */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css';
+
+html,
+body,
+#root {
+  height: 100%;
+}

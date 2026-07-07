@@ -1,0 +1,244 @@
+{
+  "app": {
+    "title": "VBG - CSVVDH",
+    "tagline": "Signalement et suivi des cas de violences basées sur le genre"
+  },
+  "auth": {
+    "login": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "loginButton": "Se connecter",
+    "loginError": "Nom d'utilisateur ou mot de passe incorrect",
+    "logout": "Déconnexion"
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "newCase": {
+    "navLink": "Nouveau cas",
+    "title": "Signaler un nouveau cas",
+    "back": "Précédent",
+    "next": "Suivant",
+    "submit": "Enregistrer",
+    "submitError": "Une erreur est survenue lors de l'enregistrement du cas",
+    "noReferralStructures": "Veuillez d'abord sélectionner une localisation",
+    "stepProgress": "Étape {{current}} sur {{total}}",
+    "steps": {
+      "violenceType": "Type de violence",
+      "location": "Localisation",
+      "dateTime": "Date et heure",
+      "victimSituation": "Situation de la victime",
+      "details": "Détails",
+      "referralStructure": "Structure de référencement",
+      "review": "Vérification"
+    },
+    "fields": {
+      "violenceType": "Type de violence",
+      "region": "Région",
+      "incidentAt": "Date et heure de l'incident",
+      "alias": "Alias de la victime",
+      "aliasHelp": "Optionnel - à utiliser au lieu du nom réel",
+      "ageRange": "Tranche d'âge",
+      "sex": "Sexe",
+      "contactPhone": "Téléphone de contact",
+      "contactPhoneHelp": "Optionnel",
+      "relationshipToPerpetrator": "Relation avec l'auteur présumé",
+      "perpetratorKnown": "L'auteur présumé est connu de la victime",
+      "cohabitingWithPerpetrator": "La victime cohabite avec l'auteur présumé",
+      "vulnerabilityFactors": "Facteurs de vulnérabilité",
+      "safetyRisk": "Niveau de risque",
+      "description": "Description du cas",
+      "measuresTaken": "Mesures prises",
+      "referralStructure": "Structure de référencement"
+    },
+    "ageRange": {
+      "under_12": "Moins de 12 ans",
+      "12_17": "12 à 17 ans",
+      "18_25": "18 à 25 ans",
+      "26_40": "26 à 40 ans",
+      "41_60": "41 à 60 ans",
+      "over_60": "Plus de 60 ans"
+    },
+    "sex": {
+      "female": "Féminin",
+      "male": "Masculin",
+      "other": "Autre"
+    },
+    "relationship": {
+      "family_member": "Membre de la famille",
+      "intimate_partner": "Partenaire intime",
+      "acquaintance": "Connaissance",
+      "stranger": "Inconnu",
+      "authority_figure": "Figure d'autorité",
+      "other": "Autre"
+    },
+    "vulnerabilityFactor": {
+      "minor": "Mineur(e)",
+      "disability": "Situation de handicap",
+      "pregnant": "Grossesse",
+      "displaced_refugee": "Déplacé(e) ou réfugié(e)",
+      "other": "Autre"
+    },
+    "safetyRisk": {
+      "low": "Faible",
+      "medium": "Moyen",
+      "high": "Élevé"
+    }
+  },
+  "caseStatus": {
+    "new": "Nouveau",
+    "acknowledged": "Reconnu",
+    "in_process": "En cours",
+    "closed": "Clôturé"
+  },
+  "followUpOutcome": {
+    "community_resolution": "Résolution communautaire",
+    "referred_to_justice": "Référé à la justice",
+    "in_process": "En cours",
+    "other": "Autre"
+  },
+  "auditAction": {
+    "create": "Création",
+    "view": "Consultation",
+    "update": "Modification",
+    "status_change": "Changement de statut",
+    "delete": "Suppression"
+  },
+  "caseList": {
+    "title": "Cas",
+    "loading": "Chargement...",
+    "empty": "Aucun cas ne correspond à ces critères",
+    "filters": {
+      "status": "Statut",
+      "violenceType": "Type de violence",
+      "region": "Région",
+      "search": "Recherche",
+      "all": "Tous"
+    }
+  },
+  "caseDetail": {
+    "notFound": "Cas introuvable",
+    "createdBy": "Signalé par",
+    "victimSituation": "Situation de la victime",
+    "yes": "Oui",
+    "no": "Non",
+    "status": "Statut",
+    "updateStatus": "Mettre à jour",
+    "acknowledge": "Reconnaître le cas",
+    "followUpHistory": "Historique de suivi",
+    "noFollowUps": "Aucun suivi enregistré",
+    "addFollowUp": "Ajouter un suivi",
+    "comment": "Commentaire",
+    "outcome": "Résultat",
+    "submitFollowUp": "Enregistrer le suivi",
+    "auditTrail": "Journal d'audit"
+  },
+  "dashboard": {
+    "navLink": "Tableau de bord",
+    "title": "Tableau de bord",
+    "totalCases": "Nombre total de cas",
+    "cases": "Cas",
+    "byRegion": "Cas par région",
+    "byViolenceType": "Cas par type de violence",
+    "byRegionAndType": "Cas par région et type de violence",
+    "noData": "Aucune donnée disponible"
+  },
+  "admin": {
+    "navLink": "Administration",
+    "tabs": {
+      "users": "Utilisateurs",
+      "regions": "Régions",
+      "violenceCategories": "Types de violence",
+      "referralStructures": "Structures de référencement",
+      "notificationRecipients": "Destinataires SMS",
+      "auditLog": "Journal d'audit"
+    },
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "saveError": "Une erreur est survenue lors de l'enregistrement. Vérifiez les champs et réessayez.",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "activate": "Activer",
+    "deactivate": "Désactiver",
+    "translations": "Traductions",
+    "addTranslation": "Ajouter une traduction",
+    "locale": "Langue (code)",
+    "label": "Libellé",
+    "users": {
+      "add": "Ajouter un utilisateur",
+      "addTitle": "Ajouter un utilisateur",
+      "editTitle": "Modifier l'utilisateur",
+      "fullName": "Nom complet",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "passwordOptional": "Nouveau mot de passe (laisser vide pour ne pas changer)",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "role": "Rôle",
+      "region": "Région",
+      "noRegion": "Aucune région",
+      "deleteTitle": "Supprimer l'utilisateur",
+      "deleteMessage": "Voulez-vous vraiment supprimer {{name}} ? Cette action désactivera son compte."
+    },
+    "regions": {
+      "add": "Ajouter une région",
+      "addTitle": "Ajouter une région",
+      "editTitle": "Modifier la région",
+      "name": "Nom",
+      "municipality": "Commune",
+      "village": "Village"
+    },
+    "violenceCategories": {
+      "add": "Ajouter un type de violence",
+      "addTitle": "Ajouter un type de violence",
+      "editTitle": "Modifier le type de violence",
+      "code": "Code",
+      "sortOrder": "Ordre d'affichage"
+    },
+    "referralStructures": {
+      "add": "Ajouter une structure",
+      "addTitle": "Ajouter une structure de référencement",
+      "editTitle": "Modifier la structure de référencement",
+      "type": "Type",
+      "name": "Nom",
+      "region": "Région",
+      "contactPhone": "Téléphone de contact",
+      "contactEmail": "E-mail de contact"
+    },
+    "notificationRecipients": {
+      "add": "Ajouter un destinataire",
+      "addTitle": "Ajouter un destinataire SMS",
+      "editTitle": "Modifier le destinataire SMS",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "region": "Région",
+      "violenceType": "Type de violence",
+      "allRegions": "Toutes les régions",
+      "allViolenceTypes": "Tous les types de violence"
+    },
+    "auditLog": {
+      "entityType": "Type d'entité",
+      "entityId": "ID de l'entité",
+      "user": "Utilisateur",
+      "action": "Action",
+      "timestamp": "Date et heure",
+      "allUsers": "Tous les utilisateurs",
+      "empty": "Aucune entrée ne correspond à ces critères"
+    }
+  },
+  "referralStructureType": {
+    "police": "Police",
+    "gendarmerie": "Gendarmerie",
+    "social_services": "Services sociaux",
+    "health_center": "Centre de santé"
+  },
+  "role": {
+    "community_relay": "Relais communautaire",
+    "regional_director": "Directeur régional",
+    "institutional_user": "Utilisateur institutionnel",
+    "administrator": "Administrateur"
+  }
+}
