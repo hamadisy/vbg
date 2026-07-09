@@ -31,4 +31,9 @@ export class NotificationRecipient {
 
   @Column({ default: true })
   isActive: boolean;
+
+  // SMS body language, per spec "Multilingual Support". Same default/shape as
+  // User.language; recipients aren't Users so it isn't derived from an account.
+  @Column({ default: 'fr' })
+  language: string;
 }

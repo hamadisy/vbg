@@ -5,6 +5,9 @@ export default registerAs('app', () => ({
   port: parseInt(process.env.PORT ?? '3000', 10),
   apiPrefix: process.env.API_PREFIX ?? 'api',
   corsOrigin: process.env.CORS_ORIGIN ?? '*',
+  // Base URL of the deployed frontend - used to build absolute case links in
+  // SMS notifications (no route to build one server-side otherwise).
+  frontendUrl: (process.env.FRONTEND_URL ?? 'http://localhost:5173').replace(/\/$/, ''),
   database: {
     storage: process.env.DB_STORAGE ?? './data/vbg-dev.sqlite',
   },

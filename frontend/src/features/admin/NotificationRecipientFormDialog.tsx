@@ -26,6 +26,7 @@ import type {
   NotificationRecipient,
   UpdateNotificationRecipientRequest,
 } from '../../api/notification-recipients.api';
+import { SUPPORTED_LANGUAGES } from '../../i18n/i18n';
 
 // E.164 without the leading '+' - the format Vonage's SMS API expects for "to".
 const E164_NO_PLUS = /^[1-9]\d{7,14}$/;
@@ -38,6 +39,7 @@ const schema = z.object({
     .pipe(z.string().regex(E164_NO_PLUS, 'admin.notificationRecipients.phoneInvalid')),
   regionId: z.string().optional(),
   violenceCategoryId: z.string().optional(),
+  language: z.string(),
   isActive: z.boolean(),
 });
 
@@ -84,6 +86,7 @@ export function NotificationRecipientFormDialog({
         phone: recipient?.phone ?? '',
         regionId: recipient?.regionId ?? '',
         violenceCategoryId: recipient?.violenceCategoryId ?? '',
+        language: recipient?.language ?? 'fr',
         isActive: recipient?.isActive ?? true,
       });
     }
@@ -95,6 +98,7 @@ export function NotificationRecipientFormDialog({
       phone: values.phone,
       regionId: values.regionId || undefined,
       violenceCategoryId: values.violenceCategoryId || undefined,
+      language: values.language,
     };
     if (isCreate) {
       onSubmitCreate(shared);
@@ -158,6 +162,22 @@ export function NotificationRecipientFormDialog({
                   {categories.map((category) => (
                     <MenuItem key={category.id} value={category.id}>
                       {translateCategory(category, i18n.language)}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            )}
+          />
+          <Controller
+            name="language"
+            control={control}
+            render={({ field }) => (
+              <FormControl fullWidth>
+                <InputLabel>{t('admin.notificationRecipients.language')}</InputLabel>
+                <Select {...field} label={t('admin.notificationRecipients.language')}>
+                  {SUPPORTED_LANGUAGES.map((language) => (
+                    <MenuItem key={language} value={language}>
+                      {language.toUpperCase()}
                     </MenuItem>
                   ))}
                 </Select>

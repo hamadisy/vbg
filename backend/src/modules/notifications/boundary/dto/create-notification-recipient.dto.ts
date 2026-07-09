@@ -24,4 +24,12 @@ export class CreateNotificationRecipientDto {
   @IsOptional()
   @IsUUID()
   violenceCategoryId?: string;
+
+  @ApiPropertyOptional({
+    description: 'SMS body language - not a hardcoded list, see spec "Multilingual Support"',
+    default: 'fr',
+  })
+  @IsOptional()
+  @IsString()
+  language?: string;
 }

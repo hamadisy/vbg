@@ -638,6 +638,11 @@ export interface components {
              * @description Omit for "all violence categories"
              */
             violenceCategoryId?: string;
+            /**
+             * @description SMS body language - not a hardcoded list, see spec "Multilingual Support"
+             * @default fr
+             */
+            language?: string;
         };
         NotificationRecipientResponseDto: {
             id: string;
@@ -646,6 +651,7 @@ export interface components {
             regionId?: string | null;
             violenceCategoryId?: string | null;
             isActive: boolean;
+            language: string;
         };
         UpdateNotificationRecipientDto: {
             name?: string;
@@ -660,6 +666,11 @@ export interface components {
              * @description Omit for "all violence categories"
              */
             violenceCategoryId?: string;
+            /**
+             * @description SMS body language - not a hardcoded list, see spec "Multilingual Support"
+             * @default fr
+             */
+            language?: string;
             /** @description Reactivate/deactivate without a separate call */
             isActive?: boolean;
         };

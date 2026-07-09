@@ -97,6 +97,7 @@ export function NotificationRecipientsAdminPage() {
               <TableCell>{t('admin.notificationRecipients.phone')}</TableCell>
               <TableCell>{t('admin.notificationRecipients.region')}</TableCell>
               <TableCell>{t('admin.notificationRecipients.violenceType')}</TableCell>
+              <TableCell>{t('admin.notificationRecipients.language')}</TableCell>
               <TableCell>{t('admin.active')}</TableCell>
               <TableCell sx={{ textAlign: 'end' }} />
             </TableRow>
@@ -120,6 +121,7 @@ export function NotificationRecipientsAdminPage() {
                       ? translateCategory(category, i18n.language)
                       : t('admin.notificationRecipients.allViolenceTypes')}
                   </TableCell>
+                  <TableCell>{recipient.language.toUpperCase()}</TableCell>
                   <TableCell>
                     <Chip
                       size="small"

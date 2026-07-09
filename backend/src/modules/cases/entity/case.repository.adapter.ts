@@ -16,7 +16,9 @@ import {
 const CASE_RELATIONS = {
   createdBy: true,
   region: true,
-  violenceCategory: true,
+  // Nested translations: SMS notifications need the recipient-locale label,
+  // not just the machine `code` (see NotificationsService.notifyNewCase).
+  violenceCategory: { translations: true },
   victim: true,
   referralStructure: true,
   followUpEntries: { author: true },
