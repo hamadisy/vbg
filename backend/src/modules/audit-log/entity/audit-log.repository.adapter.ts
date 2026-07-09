@@ -18,7 +18,7 @@ export class AuditLogTypeOrmRepository
   // Overrides the base (relation-free) findById - the admin-facing read API
   // always wants the acting user's name/username alongside the raw userId.
   findById(id: string): Promise<AuditLog | null> {
-    return this.repo.findOne({ where: { id }, relations: { user: true } });
+    return this.repo.findOne({ where: { id }, relations: { user: true }, withDeleted: true });
   }
 
   findAllFiltered(options: AuditLogQueryOptions): Promise<AuditLog[]> {
@@ -31,6 +31,9 @@ export class AuditLogTypeOrmRepository
       where,
       relations: { user: true },
       order: { timestamp: 'DESC' },
+      // Soft-deleted users must still resolve here - the audit trail needs to
+      // show who performed an action even after that user is later removed.
+      withDeleted: true,
     });
   }
 }
