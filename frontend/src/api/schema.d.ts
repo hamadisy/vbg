@@ -501,7 +501,7 @@ export interface components {
         CreateVictimDto: {
             alias?: string;
             /** @enum {string} */
-            ageRange: "under_12" | "12_17" | "18_25" | "26_40" | "41_60" | "over_60";
+            ageRange: "under_18" | "18_40" | "over_40";
             /** @enum {string} */
             sex: "female" | "male" | "other";
             contactPhone?: string;
@@ -545,7 +545,7 @@ export interface components {
             id: string;
             alias?: string;
             /** @enum {string} */
-            ageRange: "under_12" | "12_17" | "18_25" | "26_40" | "41_60" | "over_60";
+            ageRange: "under_18" | "18_40" | "over_40";
             /** @enum {string} */
             sex: "female" | "male" | "other";
             contactPhone?: string;
@@ -593,7 +593,7 @@ export interface components {
         UpdateVictimDto: {
             alias?: string;
             /** @enum {string} */
-            ageRange?: "under_12" | "12_17" | "18_25" | "26_40" | "41_60" | "over_60";
+            ageRange?: "under_18" | "18_40" | "over_40";
             /** @enum {string} */
             sex?: "female" | "male" | "other";
             contactPhone?: string;

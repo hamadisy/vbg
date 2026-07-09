@@ -52,12 +52,9 @@
       "referralStructure": "Structure de référencement"
     },
     "ageRange": {
-      "under_12": "Moins de 12 ans",
-      "12_17": "12 à 17 ans",
-      "18_25": "18 à 25 ans",
-      "26_40": "26 à 40 ans",
-      "41_60": "41 à 60 ans",
-      "over_60": "Plus de 60 ans"
+      "under_18": "Moins de 18 ans",
+      "18_40": "18 à 40 ans",
+      "over_40": "Plus de 40 ans"
     },
     "sex": {
       "female": "Féminin",

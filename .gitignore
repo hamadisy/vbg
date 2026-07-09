@@ -1,4 +1,4 @@
-.ignore/
+.ignore
 .claude/
 
 # Dependencies / build output (applies repo-wide; each app also has its own .gitignore)

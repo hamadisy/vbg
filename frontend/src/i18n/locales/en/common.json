@@ -52,12 +52,9 @@
       "referralStructure": "Referral structure"
     },
     "ageRange": {
-      "under_12": "Under 12",
-      "12_17": "12 to 17",
-      "18_25": "18 to 25",
-      "26_40": "26 to 40",
-      "41_60": "41 to 60",
-      "over_60": "Over 60"
+      "under_18": "Under 18",
+      "18_40": "18 to 40",
+      "over_40": "Over 40"
     },
     "sex": {
       "female": "Female",

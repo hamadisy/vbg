@@ -24,21 +24,32 @@ const CATEGORIES: SeedCategory[] = [
     labels: { [Locale.Fr]: 'Violence sexuelle', [Locale.En]: 'Sexual violence' },
   },
   {
-    code: 'PSYCHOLOGICAL_VERBAL',
+    code: 'RAPE',
     sortOrder: 3,
+    labels: {
+      [Locale.Fr]: 'Viol',
+      [Locale.En]: 'Rape',
+    },
+  },
+  {
+    code: 'DIVORCE_REFUSAL',
+    sortOrder: 4,
+    labels: {
+      [Locale.Fr]: 'Refus de divorce ou autre contrainte familiale',
+      [Locale.En]: 'Refusal of divorce or other family coercion',
+    },
+  },
+  {
+    code: 'PSYCHOLOGICAL_VERBAL',
+    sortOrder: 5,
     labels: {
       [Locale.Fr]: 'Violence psychologique / verbale',
       [Locale.En]: 'Psychological / verbal violence',
     },
   },
   {
-    code: 'ECONOMIC',
-    sortOrder: 4,
-    labels: { [Locale.Fr]: 'Violence économique', [Locale.En]: 'Economic violence' },
-  },
-  {
     code: 'DENIAL_LAND_ACCESS',
-    sortOrder: 5,
+    sortOrder: 6,
     labels: {
       [Locale.Fr]: "Refus d'accès à la terre ou aux ressources économiques",
       [Locale.En]: 'Denial of access to land or economic resources',
@@ -46,18 +57,10 @@ const CATEGORIES: SeedCategory[] = [
   },
   {
     code: 'DENIAL_EDUCATION_ACCESS',
-    sortOrder: 6,
+    sortOrder: 7,
     labels: {
       [Locale.Fr]: "Refus d'accès des enfants à l'éducation (absence d'état civil)",
       [Locale.En]: "Denial of children's access to education (no civil registration)",
-    },
-  },
-  {
-    code: 'CIVIL_DOCUMENT_CONFISCATION',
-    sortOrder: 7,
-    labels: {
-      [Locale.Fr]: "Confiscation des documents d'état civil des enfants",
-      [Locale.En]: "Confiscation of children's civil status documents",
     },
   },
   {
@@ -69,11 +72,11 @@ const CATEGORIES: SeedCategory[] = [
     },
   },
   {
-    code: 'DIVORCE_REFUSAL',
+    code: 'CIVIL_DOCUMENT_CONFISCATION',
     sortOrder: 9,
     labels: {
-      [Locale.Fr]: 'Refus de divorce ou autre contrainte familiale',
-      [Locale.En]: 'Refusal of divorce or other family coercion',
+      [Locale.Fr]: "Confiscation des documents d'état civil des enfants",
+      [Locale.En]: "Confiscation of children's civil status documents",
     },
   },
   {
@@ -82,14 +85,6 @@ const CATEGORIES: SeedCategory[] = [
     labels: {
       [Locale.Fr]: 'Mutilations génitales féminines (MGF)',
       [Locale.En]: 'Female Genital Mutilation (FGM)',
-    },
-  },
-  {
-    code: 'SEXUAL_HARASSMENT',
-    sortOrder: 11,
-    labels: {
-      [Locale.Fr]: 'Harcèlement sexuel (travail / école)',
-      [Locale.En]: 'Sexual harassment (workplace / school)',
     },
   },
   { code: 'OTHER', sortOrder: 99, labels: { [Locale.Fr]: 'Autre', [Locale.En]: 'Other' } },

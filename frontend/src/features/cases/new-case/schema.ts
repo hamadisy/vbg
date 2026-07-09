@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const ageRangeOptions = ['under_12', '12_17', '18_25', '26_40', '41_60', 'over_60'] as const;
+export const ageRangeOptions = ['under_18', '18_40', 'over_40'] as const;
 export const sexOptions = ['female', 'male', 'other'] as const;
 export const relationshipOptions = [
   'family_member',
@@ -45,7 +45,7 @@ export type NewCaseFormValues = z.infer<typeof newCaseSchema>;
 
 // MUI Select/ToggleButtonGroup need a defined initial value to stay
 // controlled from the first render - empty strings are the "nothing
-// selected yet" sentinel until the user picks a real enum value, which is
+// selected yet" sentinel for fields with no natural default, which is
 // why this is cast rather than satisfying NewCaseFormValues structurally.
 export const newCaseDefaultValues = {
   violenceCategoryId: '',
@@ -56,13 +56,13 @@ export const newCaseDefaultValues = {
   referralStructureId: '',
   victim: {
     alias: '',
-    ageRange: '',
-    sex: '',
+    ageRange: '18_40',
+    sex: 'female',
     contactPhone: '',
-    relationshipToPerpetrator: '',
+    relationshipToPerpetrator: 'stranger',
     perpetratorKnown: false,
     cohabitingWithPerpetrator: false,
     vulnerabilityFactors: [],
-    safetyRisk: '',
+    safetyRisk: 'medium',
   },
 } as unknown as NewCaseFormValues;

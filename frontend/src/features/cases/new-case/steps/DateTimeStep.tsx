@@ -18,6 +18,7 @@ export function DateTimeStep() {
           value={field.value ? dayjs(field.value) : null}
           onChange={(value) => field.onChange(value ? value.format('YYYY-MM-DDTHH:mm') : '')}
           disableFuture
+          ampm={false}
           sx={{ width: '100%' }}
         />
       )}

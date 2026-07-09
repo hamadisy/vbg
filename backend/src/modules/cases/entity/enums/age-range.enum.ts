@@ -1,8 +1,5 @@
 export enum AgeRange {
-  Under12 = 'under_12',
-  From12To17 = '12_17',
-  From18To25 = '18_25',
-  From26To40 = '26_40',
-  From41To60 = '41_60',
-  Over60 = 'over_60',
+  Under18 = 'under_18',
+  From18To40 = '18_40',
+  Over40 = 'over_40',
 }
