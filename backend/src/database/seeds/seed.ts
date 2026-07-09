@@ -6,6 +6,8 @@ import { RegionSeeder } from './region.seeder';
 import { ViolenceCategorySeeder } from './violence-category.seeder';
 import { ReferralStructureSeeder } from './referral-structure.seeder';
 import { AdminUserSeeder } from './admin-user.seeder';
+import { OperationalUsersSeeder } from './operational-users.seeder';
+import { NotificationRecipientSeeder } from './notification-recipient.seeder';
 
 async function bootstrap() {
   const logger = new Logger('Seed');
@@ -26,10 +28,12 @@ async function bootstrap() {
       }
     }
     for (const region of representativeRegions.values()) {
-      await app.get(ReferralStructureSeeder).run(region.id);
+      await app.get(ReferralStructureSeeder).run(region);
     }
 
     await app.get(AdminUserSeeder).run();
+    await app.get(OperationalUsersSeeder).run(regions);
+    await app.get(NotificationRecipientSeeder).run(regions);
     logger.log('Seed completed successfully');
   } finally {
     await app.close();

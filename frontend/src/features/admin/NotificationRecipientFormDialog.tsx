@@ -27,9 +27,15 @@ import type {
   UpdateNotificationRecipientRequest,
 } from '../../api/notification-recipients.api';
 
+// E.164 without the leading '+' - the format Vonage's SMS API expects for "to".
+const E164_NO_PLUS = /^[1-9]\d{7,14}$/;
+
 const schema = z.object({
   name: z.string().min(1),
-  phone: z.string().min(1),
+  phone: z
+    .string()
+    .transform((value) => value.replace(/[\s-]/g, '').replace(/^\+/, ''))
+    .pipe(z.string().regex(E164_NO_PLUS, 'admin.notificationRecipients.phoneInvalid')),
   regionId: z.string().optional(),
   violenceCategoryId: z.string().optional(),
   isActive: z.boolean(),
@@ -117,6 +123,9 @@ export function NotificationRecipientFormDialog({
             {...register('phone')}
             label={t('admin.notificationRecipients.phone')}
             error={!!errors.phone}
+            helperText={
+              errors.phone ? t(errors.phone.message as string) : t('admin.notificationRecipients.phoneHelp')
+            }
             fullWidth
           />
           <Controller

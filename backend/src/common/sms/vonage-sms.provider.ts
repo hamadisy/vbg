@@ -3,9 +3,9 @@ import { ConfigService } from '@nestjs/config';
 import { Vonage } from '@vonage/server-sdk';
 import { ISmsProvider, SendSmsInput } from './sms-provider.port';
 
-// Only reached when SMS_PROVIDER=vonage and real credentials are configured -
-// unverified against a live Vonage account (none exists yet); re-check the
-// @vonage/server-sdk API surface once real testing is possible.
+// Only reached when SMS_PROVIDER=vonage and real credentials are configured.
+// Sends via Vonage's legacy SMS API (client.sms.send), which requires apiKey
+// + apiSecret and expects "to" in E.164 without a leading '+'.
 @Injectable()
 export class VonageSmsProvider implements ISmsProvider {
   private readonly client: Vonage;

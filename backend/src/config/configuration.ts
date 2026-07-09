@@ -28,4 +28,10 @@ export default registerAs('app', () => ({
     password: process.env.SEED_ADMIN_PASSWORD ?? 'change-me',
     email: process.env.SEED_ADMIN_EMAIL ?? 'admin@csvvdh.local',
   },
+  seedUser: {
+    // Shared placeholder for every non-admin seeded user - bcrypt hashes
+    // can't be reversed, so real passwords set via the UI aren't reproducible;
+    // rotate each user's password via the Users admin page after seeding.
+    password: process.env.SEED_USER_PASSWORD ?? 'ChangeMe123!',
+  },
 }));

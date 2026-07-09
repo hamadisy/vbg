@@ -19,6 +19,6 @@ import { NotificationsService } from './control/notifications.service';
       useClass: NotificationRecipientTypeOrmRepository,
     },
   ],
-  exports: [NotificationsService],
+  exports: [NotificationsService, NotificationRecipientsService],
 })
 export class NotificationsModule {}

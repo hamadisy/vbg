@@ -36,8 +36,7 @@ import { ReviewStep } from './steps/ReviewStep';
 
 const STEP_FIELDS: Path<NewCaseFormValues>[][] = [
   ['violenceCategoryId'],
-  ['regionId'],
-  ['incidentAt'],
+  ['regionId', 'incidentAt'],
   [
     'victim.ageRange',
     'victim.sex',
@@ -86,10 +85,14 @@ export function NewCaseWizard() {
         content: <ViolenceTypeStep categories={categoriesQuery.data ?? []} />,
       },
       {
-        label: t('newCase.steps.location'),
-        content: <LocationStep regions={regionsQuery.data ?? []} />,
+        label: t('newCase.steps.locationAndDate'),
+        content: (
+          <Box className="flex flex-col gap-4">
+            <LocationStep regions={regionsQuery.data ?? []} />
+            <DateTimeStep />
+          </Box>
+        ),
       },
-      { label: t('newCase.steps.dateTime'), content: <DateTimeStep /> },
       { label: t('newCase.steps.victimSituation'), content: <VictimSituationStep /> },
       { label: t('newCase.steps.details'), content: <DetailsStep /> },
       {

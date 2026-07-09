@@ -24,4 +24,5 @@ export const validationSchema = Joi.object({
   SEED_ADMIN_USERNAME: Joi.string().default('admin'),
   SEED_ADMIN_PASSWORD: Joi.string().default('change-me'),
   SEED_ADMIN_EMAIL: Joi.string().email({ tlds: false }).default('admin@csvvdh.local'),
+  SEED_USER_PASSWORD: Joi.string().default('ChangeMe123!'),
 });

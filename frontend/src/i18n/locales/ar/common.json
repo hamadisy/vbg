@@ -25,8 +25,7 @@
     "stepProgress": "الخطوة {{current}} من {{total}}",
     "steps": {
       "violenceType": "نوع العنف",
-      "location": "الموقع",
-      "dateTime": "التاريخ والوقت",
+      "locationAndDate": "الموقع والتاريخ",
       "victimSituation": "وضعية الضحية",
       "details": "التفاصيل",
       "referralStructure": "جهة الإحالة",
@@ -211,6 +210,8 @@
       "editTitle": "تعديل مستلم الرسائل النصية",
       "name": "الاسم",
       "phone": "الهاتف",
+      "phoneHelp": "بصيغة E.164، مثال 2250700000000 (بدون مسافات أو + في البداية)",
+      "phoneInvalid": "أدخل رقم هاتف صالحًا بصيغة E.164، مثال 2250700000000",
       "region": "المنطقة",
       "violenceType": "نوع العنف",
       "allRegions": "جميع المناطق",

@@ -8,10 +8,13 @@ import { RegionsModule } from '../../modules/regions/regions.module';
 import { ViolenceCategoriesModule } from '../../modules/violence-categories/violence-categories.module';
 import { ReferralStructuresModule } from '../../modules/referral-structures/referral-structures.module';
 import { UsersModule } from '../../modules/users/users.module';
+import { NotificationsModule } from '../../modules/notifications/notifications.module';
 import { RegionSeeder } from './region.seeder';
 import { ViolenceCategorySeeder } from './violence-category.seeder';
 import { ReferralStructureSeeder } from './referral-structure.seeder';
 import { AdminUserSeeder } from './admin-user.seeder';
+import { OperationalUsersSeeder } from './operational-users.seeder';
+import { NotificationRecipientSeeder } from './notification-recipient.seeder';
 
 // Lightweight application context for `npm run seed` - reuses real repository
 // tokens and UsersService (password hashing) rather than a bare TypeORM script,
@@ -24,7 +27,15 @@ import { AdminUserSeeder } from './admin-user.seeder';
     ViolenceCategoriesModule,
     ReferralStructuresModule,
     UsersModule,
+    NotificationsModule,
   ],
-  providers: [RegionSeeder, ViolenceCategorySeeder, ReferralStructureSeeder, AdminUserSeeder],
+  providers: [
+    RegionSeeder,
+    ViolenceCategorySeeder,
+    ReferralStructureSeeder,
+    AdminUserSeeder,
+    OperationalUsersSeeder,
+    NotificationRecipientSeeder,
+  ],
 })
 export class SeedModule {}

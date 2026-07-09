@@ -25,8 +25,7 @@
     "stepProgress": "Étape {{current}} sur {{total}}",
     "steps": {
       "violenceType": "Type de violence",
-      "location": "Localisation",
-      "dateTime": "Date et heure",
+      "locationAndDate": "Localisation et date",
       "victimSituation": "Situation de la victime",
       "details": "Détails",
       "referralStructure": "Structure de référencement",
@@ -211,6 +210,8 @@
       "editTitle": "Modifier le destinataire SMS",
       "name": "Nom",
       "phone": "Téléphone",
+      "phoneHelp": "Format E.164, ex. 2250700000000 (sans espaces, sans + initial)",
+      "phoneInvalid": "Entrez un numéro de téléphone valide au format E.164, ex. 2250700000000",
       "region": "Région",
       "violenceType": "Type de violence",
       "allRegions": "Toutes les régions",
