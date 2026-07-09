@@ -214,6 +214,7 @@
       "phoneInvalid": "Entrez un numéro de téléphone valide au format E.164, ex. 2250700000000",
       "region": "Région",
       "violenceType": "Type de violence",
+      "language": "Langue du SMS",
       "allRegions": "Toutes les régions",
       "allViolenceTypes": "Tous les types de violence"
     },

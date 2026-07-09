@@ -5,6 +5,7 @@ export const validationSchema = Joi.object({
   PORT: Joi.number().default(3000),
   API_PREFIX: Joi.string().default('api'),
   CORS_ORIGIN: Joi.string().default('*'),
+  FRONTEND_URL: Joi.string().uri().default('http://localhost:5173'),
 
   DB_STORAGE: Joi.string().default('./data/vbg-dev.sqlite'),
 

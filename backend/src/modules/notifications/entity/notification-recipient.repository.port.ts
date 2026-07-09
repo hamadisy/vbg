@@ -14,6 +14,7 @@ export interface UpdateNotificationRecipientInput {
   regionId?: string | null;
   violenceCategoryId?: string | null;
   isActive?: boolean;
+  language?: string;
 }
 
 export interface INotificationRecipientRepository extends ICrudRepository<NotificationRecipient> {

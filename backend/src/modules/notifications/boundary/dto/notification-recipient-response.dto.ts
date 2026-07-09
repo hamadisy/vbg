@@ -8,4 +8,5 @@ export class NotificationRecipientResponseDto {
   @ApiPropertyOptional() @Expose() regionId?: string | null;
   @ApiPropertyOptional() @Expose() violenceCategoryId?: string | null;
   @ApiProperty() @Expose() isActive: boolean;
+  @ApiProperty() @Expose() language: string;
 }
