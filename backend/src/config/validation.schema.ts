@@ -18,6 +18,7 @@ export const validationSchema = Joi.object({
   MAIL_PROVIDER: Joi.string().default('stub'),
 
   SMS_PROVIDER: Joi.string().valid('stub', 'vonage').default('stub'),
+  SMS_LOG_FILE: Joi.string().default('./logs/sms.log'),
   VONAGE_API_KEY: Joi.string().allow('').default(''),
   VONAGE_API_SECRET: Joi.string().allow('').default(''),
   VONAGE_SMS_SENDER_ID: Joi.string().default('VBG'),

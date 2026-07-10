@@ -20,6 +20,8 @@ export default registerAs('app', () => ({
   mailProvider: process.env.MAIL_PROVIDER ?? 'stub',
   sms: {
     provider: process.env.SMS_PROVIDER ?? 'stub',
+    // Dedicated append-only log of every SMS send attempt (to, success/failure, reason).
+    logFile: process.env.SMS_LOG_FILE ?? './logs/sms.log',
     vonage: {
       apiKey: process.env.VONAGE_API_KEY,
       apiSecret: process.env.VONAGE_API_SECRET,
