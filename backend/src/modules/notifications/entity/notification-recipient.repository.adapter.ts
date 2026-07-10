@@ -47,4 +47,8 @@ export class NotificationRecipientTypeOrmRepository
       )
       .getMany();
   }
+
+  async remove(id: string): Promise<void> {
+    await this.repo.delete(id);
+  }
 }

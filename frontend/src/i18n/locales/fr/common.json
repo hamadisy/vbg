@@ -185,14 +185,18 @@
       "editTitle": "Modifier la région",
       "name": "Nom",
       "municipality": "Commune",
-      "village": "Village"
+      "village": "Village",
+      "deleteTitle": "Supprimer la région",
+      "deleteMessage": "Voulez-vous vraiment supprimer {{name}} ? Cette action désactivera la région."
     },
     "violenceCategories": {
       "add": "Ajouter un type de violence",
       "addTitle": "Ajouter un type de violence",
       "editTitle": "Modifier le type de violence",
       "code": "Code",
-      "sortOrder": "Ordre d'affichage"
+      "sortOrder": "Ordre d'affichage",
+      "deleteTitle": "Supprimer le type de violence",
+      "deleteMessage": "Voulez-vous vraiment supprimer {{name}} ? Cette action désactivera ce type de violence."
     },
     "referralStructures": {
       "add": "Ajouter une structure",
@@ -202,7 +206,9 @@
       "name": "Nom",
       "region": "Région",
       "contactPhone": "Téléphone de contact",
-      "contactEmail": "E-mail de contact"
+      "contactEmail": "E-mail de contact",
+      "deleteTitle": "Supprimer la structure",
+      "deleteMessage": "Voulez-vous vraiment supprimer {{name}} ? Cette action désactivera la structure."
     },
     "notificationRecipients": {
       "add": "Ajouter un destinataire",
@@ -216,7 +222,9 @@
       "violenceType": "Type de violence",
       "language": "Langue du SMS",
       "allRegions": "Toutes les régions",
-      "allViolenceTypes": "Tous les types de violence"
+      "allViolenceTypes": "Tous les types de violence",
+      "deleteTitle": "Supprimer le destinataire",
+      "deleteMessage": "Voulez-vous vraiment supprimer {{name}} ? Cette action désactivera ce destinataire."
     },
     "auditLog": {
       "entityType": "Type d'entité",

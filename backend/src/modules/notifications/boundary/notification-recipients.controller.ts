@@ -65,7 +65,7 @@ export class NotificationRecipientsController {
   @Delete(':id')
   @HttpCode(HttpStatus.NO_CONTENT)
   async remove(@Param('id', ParseUUIDPipe) id: string): Promise<void> {
-    await this.notificationRecipientsService.deactivate(id);
+    await this.notificationRecipientsService.remove(id);
   }
 
   private toResponse(entity: NotificationRecipient): NotificationRecipientResponseDto {

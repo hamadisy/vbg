@@ -185,14 +185,18 @@
       "editTitle": "تعديل المنطقة",
       "name": "الاسم",
       "municipality": "البلدية",
-      "village": "القرية"
+      "village": "القرية",
+      "deleteTitle": "حذف المنطقة",
+      "deleteMessage": "هل تريد حقًا حذف {{name}}؟ سيؤدي هذا إلى تعطيل المنطقة."
     },
     "violenceCategories": {
       "add": "إضافة نوع عنف",
       "addTitle": "إضافة نوع عنف",
       "editTitle": "تعديل نوع العنف",
       "code": "الرمز",
-      "sortOrder": "ترتيب العرض"
+      "sortOrder": "ترتيب العرض",
+      "deleteTitle": "حذف نوع العنف",
+      "deleteMessage": "هل تريد حقًا حذف {{name}}؟ سيؤدي هذا إلى تعطيل نوع العنف هذا."
     },
     "referralStructures": {
       "add": "إضافة جهة",
@@ -202,7 +206,9 @@
       "name": "الاسم",
       "region": "المنطقة",
       "contactPhone": "هاتف التواصل",
-      "contactEmail": "البريد الإلكتروني للتواصل"
+      "contactEmail": "البريد الإلكتروني للتواصل",
+      "deleteTitle": "حذف الجهة",
+      "deleteMessage": "هل تريد حقًا حذف {{name}}؟ سيؤدي هذا إلى تعطيل الجهة."
     },
     "notificationRecipients": {
       "add": "إضافة مستلم",
@@ -216,7 +222,9 @@
       "violenceType": "نوع العنف",
       "language": "لغة الرسالة النصية",
       "allRegions": "جميع المناطق",
-      "allViolenceTypes": "جميع أنواع العنف"
+      "allViolenceTypes": "جميع أنواع العنف",
+      "deleteTitle": "حذف المستلم",
+      "deleteMessage": "هل تريد حقًا حذف {{name}}؟ سيؤدي هذا إلى تعطيل هذا المستلم."
     },
     "auditLog": {
       "entityType": "نوع الكيان",

@@ -23,4 +23,8 @@ export interface INotificationRecipientRepository extends ICrudRepository<Notifi
   // Active recipients whose regionId/violenceCategoryId either match the case's
   // or are null (null = "all regions"/"all categories").
   findMatching(regionId: string, violenceCategoryId: string): Promise<NotificationRecipient[]>;
+  // Hard delete - unlike Region/ViolenceCategory/ReferralStructure, nothing
+  // holds a FK to a NotificationRecipient, so there's no referential-integrity
+  // reason to only soft-deactivate it.
+  remove(id: string): Promise<void>;
 }

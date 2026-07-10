@@ -39,8 +39,8 @@ export class NotificationRecipientsService {
     return this.recipients.update(id, dto);
   }
 
-  async deactivate(id: string): Promise<void> {
+  async remove(id: string): Promise<void> {
     await this.findById(id);
-    await this.recipients.update(id, { isActive: false });
+    await this.recipients.remove(id);
   }
 }

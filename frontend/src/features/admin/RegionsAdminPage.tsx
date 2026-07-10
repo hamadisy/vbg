@@ -15,9 +15,11 @@ import {
   Typography,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import {
   createRegion,
+  deactivateRegion,
   listRegions,
   updateRegion,
   type CreateRegionRequest,
@@ -25,16 +27,18 @@ import {
   type UpdateRegionRequest,
 } from '../../api/regions.api';
 import { RegionFormDialog } from './RegionFormDialog';
+import { ConfirmDialog } from './ConfirmDialog';
 
 export function RegionsAdminPage() {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [editingRegion, setEditingRegion] = useState<Region | null>(null);
   const [formOpen, setFormOpen] = useState(false);
+  const [deletingRegion, setDeletingRegion] = useState<Region | null>(null);
 
   const regionsQuery = useQuery({
     queryKey: ['admin-regions'],
-    queryFn: () => listRegions(true),
+    queryFn: () => listRegions(),
   });
 
   const invalidate = () => queryClient.invalidateQueries({ queryKey: ['admin-regions'] });
@@ -52,6 +56,13 @@ export function RegionsAdminPage() {
     onSuccess: async () => {
       await invalidate();
       setFormOpen(false);
+    },
+  });
+  const deleteMutation = useMutation({
+    mutationFn: (id: string) => deactivateRegion(id),
+    onSuccess: async () => {
+      await invalidate();
+      setDeletingRegion(null);
     },
   });
 
@@ -110,6 +121,13 @@ export function RegionsAdminPage() {
                   >
                     <EditIcon fontSize="small" />
                   </IconButton>
+                  <IconButton
+                    size="small"
+                    onClick={() => setDeletingRegion(region)}
+                    aria-label={t('admin.delete')}
+                  >
+                    <DeleteIcon fontSize="small" />
+                  </IconButton>
                 </TableCell>
               </TableRow>
             ))}
@@ -126,6 +144,15 @@ export function RegionsAdminPage() {
         onSubmitUpdate={(id, payload) => updateMutation.mutate({ id, payload })}
         submitting={createMutation.isPending || updateMutation.isPending}
         error={createMutation.isError || updateMutation.isError ? t('admin.saveError') : undefined}
+      />
+
+      <ConfirmDialog
+        open={!!deletingRegion}
+        title={t('admin.regions.deleteTitle')}
+        message={t('admin.regions.deleteMessage', { name: deletingRegion?.name ?? '' })}
+        onCancel={() => setDeletingRegion(null)}
+        onConfirm={() => deletingRegion && deleteMutation.mutate(deletingRegion.id)}
+        loading={deleteMutation.isPending}
       />
     </Box>
   );

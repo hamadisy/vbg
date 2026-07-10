@@ -15,9 +15,11 @@ import {
   Typography,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import {
   createViolenceCategory,
+  deactivateViolenceCategory,
   listViolenceCategories,
   translateCategory,
   updateViolenceCategory,
@@ -26,16 +28,18 @@ import {
   type ViolenceCategory,
 } from '../../api/violence-categories.api';
 import { ViolenceCategoryFormDialog } from './ViolenceCategoryFormDialog';
+import { ConfirmDialog } from './ConfirmDialog';
 
 export function ViolenceCategoriesAdminPage() {
   const { t, i18n } = useTranslation();
   const queryClient = useQueryClient();
   const [editingCategory, setEditingCategory] = useState<ViolenceCategory | null>(null);
   const [formOpen, setFormOpen] = useState(false);
+  const [deletingCategory, setDeletingCategory] = useState<ViolenceCategory | null>(null);
 
   const categoriesQuery = useQuery({
     queryKey: ['admin-violence-categories'],
-    queryFn: () => listViolenceCategories(true),
+    queryFn: () => listViolenceCategories(),
   });
 
   const invalidate = () =>
@@ -54,6 +58,13 @@ export function ViolenceCategoriesAdminPage() {
     onSuccess: async () => {
       await invalidate();
       setFormOpen(false);
+    },
+  });
+  const deleteMutation = useMutation({
+    mutationFn: (id: string) => deactivateViolenceCategory(id),
+    onSuccess: async () => {
+      await invalidate();
+      setDeletingCategory(null);
     },
   });
 
@@ -112,6 +123,13 @@ export function ViolenceCategoriesAdminPage() {
                   >
                     <EditIcon fontSize="small" />
                   </IconButton>
+                  <IconButton
+                    size="small"
+                    onClick={() => setDeletingCategory(category)}
+                    aria-label={t('admin.delete')}
+                  >
+                    <DeleteIcon fontSize="small" />
+                  </IconButton>
                 </TableCell>
               </TableRow>
             ))}
@@ -128,6 +146,17 @@ export function ViolenceCategoriesAdminPage() {
         onSubmitUpdate={(id, payload) => updateMutation.mutate({ id, payload })}
         submitting={createMutation.isPending || updateMutation.isPending}
         error={createMutation.isError || updateMutation.isError ? t('admin.saveError') : undefined}
+      />
+
+      <ConfirmDialog
+        open={!!deletingCategory}
+        title={t('admin.violenceCategories.deleteTitle')}
+        message={t('admin.violenceCategories.deleteMessage', {
+          name: deletingCategory ? translateCategory(deletingCategory, i18n.language) : '',
+        })}
+        onCancel={() => setDeletingCategory(null)}
+        onConfirm={() => deletingCategory && deleteMutation.mutate(deletingCategory.id)}
+        loading={deleteMutation.isPending}
       />
     </Box>
   );

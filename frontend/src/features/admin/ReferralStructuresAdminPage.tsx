@@ -15,10 +15,12 @@ import {
   Typography,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { listRegions } from '../../api/regions.api';
 import {
   createReferralStructure,
+  deactivateReferralStructure,
   listReferralStructures,
   updateReferralStructure,
   type CreateReferralStructureRequest,
@@ -26,16 +28,18 @@ import {
   type UpdateReferralStructureRequest,
 } from '../../api/referral-structures.api';
 import { ReferralStructureFormDialog } from './ReferralStructureFormDialog';
+import { ConfirmDialog } from './ConfirmDialog';
 
 export function ReferralStructuresAdminPage() {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [editingStructure, setEditingStructure] = useState<ReferralStructure | null>(null);
   const [formOpen, setFormOpen] = useState(false);
+  const [deletingStructure, setDeletingStructure] = useState<ReferralStructure | null>(null);
 
   const structuresQuery = useQuery({
     queryKey: ['admin-referral-structures'],
-    queryFn: () => listReferralStructures(undefined, true),
+    queryFn: () => listReferralStructures(),
   });
   const regionsQuery = useQuery({ queryKey: ['regions'], queryFn: () => listRegions() });
   const regionNameById = new Map((regionsQuery.data ?? []).map((r) => [r.id, r.name]));
@@ -56,6 +60,13 @@ export function ReferralStructuresAdminPage() {
     onSuccess: async () => {
       await invalidate();
       setFormOpen(false);
+    },
+  });
+  const deleteMutation = useMutation({
+    mutationFn: (id: string) => deactivateReferralStructure(id),
+    onSuccess: async () => {
+      await invalidate();
+      setDeletingStructure(null);
     },
   });
 
@@ -116,6 +127,13 @@ export function ReferralStructuresAdminPage() {
                   >
                     <EditIcon fontSize="small" />
                   </IconButton>
+                  <IconButton
+                    size="small"
+                    onClick={() => setDeletingStructure(structure)}
+                    aria-label={t('admin.delete')}
+                  >
+                    <DeleteIcon fontSize="small" />
+                  </IconButton>
                 </TableCell>
               </TableRow>
             ))}
@@ -133,6 +151,17 @@ export function ReferralStructuresAdminPage() {
         onSubmitUpdate={(id, payload) => updateMutation.mutate({ id, payload })}
         submitting={createMutation.isPending || updateMutation.isPending}
         error={createMutation.isError || updateMutation.isError ? t('admin.saveError') : undefined}
+      />
+
+      <ConfirmDialog
+        open={!!deletingStructure}
+        title={t('admin.referralStructures.deleteTitle')}
+        message={t('admin.referralStructures.deleteMessage', {
+          name: deletingStructure?.name ?? '',
+        })}
+        onCancel={() => setDeletingStructure(null)}
+        onConfirm={() => deletingStructure && deleteMutation.mutate(deletingStructure.id)}
+        loading={deleteMutation.isPending}
       />
     </Box>
   );

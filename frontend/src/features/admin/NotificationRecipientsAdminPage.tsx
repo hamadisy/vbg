@@ -15,11 +15,13 @@ import {
   Typography,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { listRegions } from '../../api/regions.api';
 import { listViolenceCategories, translateCategory } from '../../api/violence-categories.api';
 import {
   createNotificationRecipient,
+  deleteNotificationRecipient,
   listNotificationRecipients,
   updateNotificationRecipient,
   type CreateNotificationRecipientRequest,
@@ -27,16 +29,18 @@ import {
   type UpdateNotificationRecipientRequest,
 } from '../../api/notification-recipients.api';
 import { NotificationRecipientFormDialog } from './NotificationRecipientFormDialog';
+import { ConfirmDialog } from './ConfirmDialog';
 
 export function NotificationRecipientsAdminPage() {
   const { t, i18n } = useTranslation();
   const queryClient = useQueryClient();
   const [editingRecipient, setEditingRecipient] = useState<NotificationRecipient | null>(null);
   const [formOpen, setFormOpen] = useState(false);
+  const [deletingRecipient, setDeletingRecipient] = useState<NotificationRecipient | null>(null);
 
   const recipientsQuery = useQuery({
     queryKey: ['admin-notification-recipients'],
-    queryFn: () => listNotificationRecipients(true),
+    queryFn: () => listNotificationRecipients(),
   });
   const regionsQuery = useQuery({ queryKey: ['regions'], queryFn: () => listRegions() });
   const categoriesQuery = useQuery({
@@ -63,6 +67,13 @@ export function NotificationRecipientsAdminPage() {
     onSuccess: async () => {
       await invalidate();
       setFormOpen(false);
+    },
+  });
+  const deleteMutation = useMutation({
+    mutationFn: (id: string) => deleteNotificationRecipient(id),
+    onSuccess: async () => {
+      await invalidate();
+      setDeletingRecipient(null);
     },
   });
 
@@ -137,6 +148,13 @@ export function NotificationRecipientsAdminPage() {
                     >
                       <EditIcon fontSize="small" />
                     </IconButton>
+                    <IconButton
+                      size="small"
+                      onClick={() => setDeletingRecipient(recipient)}
+                      aria-label={t('admin.delete')}
+                    >
+                      <DeleteIcon fontSize="small" />
+                    </IconButton>
                   </TableCell>
                 </TableRow>
               );
@@ -156,6 +174,17 @@ export function NotificationRecipientsAdminPage() {
         onSubmitUpdate={(id, payload) => updateMutation.mutate({ id, payload })}
         submitting={createMutation.isPending || updateMutation.isPending}
         error={createMutation.isError || updateMutation.isError ? t('admin.saveError') : undefined}
+      />
+
+      <ConfirmDialog
+        open={!!deletingRecipient}
+        title={t('admin.notificationRecipients.deleteTitle')}
+        message={t('admin.notificationRecipients.deleteMessage', {
+          name: deletingRecipient?.name ?? '',
+        })}
+        onCancel={() => setDeletingRecipient(null)}
+        onConfirm={() => deletingRecipient && deleteMutation.mutate(deletingRecipient.id)}
+        loading={deleteMutation.isPending}
       />
     </Box>
   );

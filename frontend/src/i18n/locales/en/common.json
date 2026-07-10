@@ -185,14 +185,18 @@
       "editTitle": "Edit region",
       "name": "Name",
       "municipality": "Municipality",
-      "village": "Village"
+      "village": "Village",
+      "deleteTitle": "Delete region",
+      "deleteMessage": "Are you sure you want to delete {{name}}? This will deactivate the region."
     },
     "violenceCategories": {
       "add": "Add type of violence",
       "addTitle": "Add type of violence",
       "editTitle": "Edit type of violence",
       "code": "Code",
-      "sortOrder": "Sort order"
+      "sortOrder": "Sort order",
+      "deleteTitle": "Delete type of violence",
+      "deleteMessage": "Are you sure you want to delete {{name}}? This will deactivate this type of violence."
     },
     "referralStructures": {
       "add": "Add structure",
@@ -202,7 +206,9 @@
       "name": "Name",
       "region": "Region",
       "contactPhone": "Contact phone",
-      "contactEmail": "Contact email"
+      "contactEmail": "Contact email",
+      "deleteTitle": "Delete structure",
+      "deleteMessage": "Are you sure you want to delete {{name}}? This will deactivate the structure."
     },
     "notificationRecipients": {
       "add": "Add recipient",
@@ -216,7 +222,9 @@
       "violenceType": "Type of violence",
       "language": "SMS language",
       "allRegions": "All regions",
-      "allViolenceTypes": "All types of violence"
+      "allViolenceTypes": "All types of violence",
+      "deleteTitle": "Delete recipient",
+      "deleteMessage": "Are you sure you want to delete {{name}}? This will deactivate this recipient."
     },
     "auditLog": {
       "entityType": "Entity type",
