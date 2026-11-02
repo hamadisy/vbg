@@ -1,0 +1,119 @@
+ID;Type de violence;Date de l'incident;Region;Alias Victime;Tranche d'age;Sexe;Telephone;Relation Auteur;Facteurs Vulnerabilite;Niveau de risque;Description;Structure Reference;Relais
+1;Viol;12/05/2023;Brakna;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 1
+2;Viol;05/06/2023;Brakna;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 2
+3;Viol;20/06/2023;Brakna;Mariem;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 1
+4;Viol;02/07/2023;Brakna;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 2
+5;Viol;15/07/2023;Brakna;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 1
+6;Viol;10/08/2023;Brakna;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 2
+7;Viol;22/08/2023;Brakna;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 1
+8;Viol;05/09/2023;Brakna;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 2
+9;Viol;18/09/2023;Brakna;Mintata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 1
+10;Viol;01/10/2023;Brakna;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Bababé 2
+11;Mariage Précoce;20/05/2023;Brakna;Fatimetou;Moins de 18 ans;Féminin;;Famille;Aucun;élève;Mariage forcé;Police;Relais Bababé 1
+12;Violence Physique Conjugale;15/06/2023;Brakna;Mariam;18 è  40 ans;Féminin;;Conjoint;Aucun;MOYEN;Violence conjugale;Police;Relais Bababé 2
+13;Refus d'è‰tat Civil;10/05/2023;Brakna;Aissata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 1
+14;Refus d'è‰tat Civil;25/05/2023;Brakna;Mariem;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 2
+15;Refus d'è‰tat Civil;08/06/2023;Brakna;Khadija;18 è  40 ans;Féminin;;Inconnu;Déplacé(e) ou réfugié(e);FAIBLE;Refus document;Etat Civil;Relais Bababé 1
+16;Refus d'è‰tat Civil;22/06/2023;Brakna;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 2
+17;Refus d'è‰tat Civil;06/07/2023;Brakna;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 1
+18;Refus d'è‰tat Civil;20/07/2023;Brakna;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 2
+19;Refus d'è‰tat Civil;03/08/2023;Brakna;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 1
+20;Refus d'è‰tat Civil;17/08/2023;Brakna;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 2
+21;Refus d'è‰tat Civil;31/08/2023;Brakna;Mintata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 1
+22;Refus d'è‰tat Civil;14/09/2023;Brakna;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 2
+23;Refus d'è‰tat Civil;28/09/2023;Brakna;Mariam;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 1
+24;Refus d'è‰tat Civil;12/10/2023;Brakna;Nourel;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Bababé 2
+25;Refus d'è‰tat Charge;14/05/2023;Brakna;Lalla;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais Bababé 1
+26;Refus d'è‰tat Charge;28/06/2023;Brakna;Cheikh;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais Bababé 2
+27;Refus de Prise en Charge;18/05/2023;Brakna;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais Bababé 1
+28;Refus de Prise en Charge;04/07/2023;Brakna;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais Bababé 2
+29;Violence Physique (VP);11/06/2023;Brakna;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;MOYEN;Violence physique;Police;Relais Bababé 1
+30;Violence Physique (VP);25/07/2023;Brakna;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;MOYEN;Violence physique;Police;Relais Bababé 2
+31;Viol;09/05/2023;Brakna;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 1
+32;Viol;23/05/2023;Brakna;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 2
+33;Viol;06/06/2023;Brakna;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 1
+34;Viol;20/06/2023;Brakna;Mintata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 2
+35;Viol;04/07/2023;Brakna;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 1
+36;Viol;18/07/2023;Brakna;Mariam;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 2
+37;Viol;01/08/2023;Brakna;Nourel;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 1
+38;Viol;15/08/2023;Brakna;Lalla;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 2
+39;Viol;29/08/2023;Brakna;Cheikh;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 1
+40;Viol;12/09/2023;Brakna;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Boghé 2
+41;Mariage Précoce;18/06/2023;Brakna;Khadija;Moins de 18 ans;Féminin;;Famille;Aucun;élève;Mariage forcé;Police;Relais Boghé 1
+42;Violence Physique Conjugale;22/07/2023;Brakna;Fatima;18 è  40 ans;Féminin;;Conjoint;Aucun;MOYEN;Violence conjugale;Police;Relais Boghé 2
+43;Refus d'è‰tat Civil;11/05/2023;Brakna;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+44;Refus d'è‰tat Civil;25/05/2023;Brakna;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 2
+45;Refus d'è‰tat Civil;08/06/2023;Brakna;Mariem;18 è  40 ans;Féminin;;Inconnu;Déplacé(e) ou réfugié(e);FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+46;Refus d'è‰tat Civil;22/06/2023;Brakna;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 2
+47;Refus d'è‰tat Civil;06/07/2023;Brakna;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+48;Refus d'è‰tat Civil;20/07/2023;Brakna;Mintata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 2
+49;Refus d'è‰tat Civil;03/08/2023;Brakna;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+50;Refus d'è‰tat Civil;17/08/2023;Brakna;Mariam;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 2
+51;Refus d'è‰tat Civil;31/08/2023;Brakna;Nourel;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+52;Refus d'è‰tat Civil;14/09/2023;Brakna;Lalla;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 2
+53;Refus d'è‰tat Civil;28/09/2023;Brakna;Cheikh;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+54;Refus d'è‰tat Charge;15/05/2023;Brakna;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais Boghé 1
+55;Refus d'è‰tat Charge;29/06/2023;Brakna;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais Boghé 2
+56;Refus de Prise en Charge;19/05/2023;Brakna;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais Boghé 1
+57;Refus de Prise en Charge;03/07/2023;Brakna;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais Boghé 2
+58;Violence Physique (VP);12/06/2023;Brakna;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;MOYEN;Violence physique;Police;Relais Boghé 1
+59;Violence Physique (VP);26/07/2023;Brakna;Mariem;18 è  40 ans;Féminin;;Inconnu;Aucun;MOYEN;Violence physique;Police;Relais Boghé 2
+60;Refus d'è‰tat Civil;01/06/2023;Brakna;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 1
+61;Refus d'è‰tat Civil;15/06/2023;Brakna;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Boghé 2
+62;Viol;10/05/2023;Dar el Avia;Aissata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais commune
+63;Viol;14/06/2023;Dar el Avia;Mintou;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais commune
+64;Mariage Précoce;18/07/2023;Dar el Avia;Fatou;Moins de 18 ans;Féminin;;Famille;Aucun;élève;Mariage forcé;Police;Relais commune
+65;Violence Physique Conjugale;22/08/2023;Dar el Avia;Mariam;18 è  40 ans;Féminin;;Conjoint;Aucun;MOYEN;Violence conjugale;Police;Relais commune
+66;Refus d'è‰tat Civil;12/05/2023;Dar el Avia;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+67;Refus d'è‰tat Civil;26/05/2023;Dar el Avia;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+68;Refus d'è‰tat Civil;09/06/2023;Dar el Avia;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+69;Refus d'è‰tat Civil;23/06/2023;Dar el Avia;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+70;Refus d'è‰tat Civil;07/07/2023;Dar el Avia;Nourel;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+71;Refus d'è‰tat Civil;21/07/2023;Dar el Avia;Lalla;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+72;Refus d'è‰tat Civil;04/08/2023;Dar el Avia;Cheikh;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+73;Refus d'è‰tat Civil;18/08/2023;Dar el Avia;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+74;Refus d'è‰tat Civil;01/09/2023;Dar el Avia;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+75;Refus d'è‰tat Civil;15/09/2023;Dar el Avia;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+76;Refus d'è‰tat Civil;29/09/2023;Dar el Avia;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+77;Refus d'è‰tat Civil;13/10/2023;Dar el Avia;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+78;Refus d'è‰tat Charge;16/05/2023;Dar el Avia;Mariem;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais commune
+79;Refus d'è‰tat Charge;30/06/2023;Dar el Avia;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais commune
+80;Refus de Prise en Charge;20/05/2023;Dar el Avia;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais commune
+81;Refus de Prise en Charge;04/07/2023;Dar el Avia;Mintata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais commune
+82;Viol;11/05/2023;Dar el Barka;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Dar El Barka 1
+83;Viol;15/06/2023;Dar el Barka;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais Dar El Barka 2
+84;Mariage Précoce;19/07/2023;Dar el Barka;Aicha;Moins de 18 ans;Féminin;;Famille;Aucun;élève;Mariage forcé;Police;Relais Dar El Barka 1
+85;Violence Physique Conjugale;23/08/2023;Dar el Barka;Zeinabou;18 è  40 ans;Féminin;;Conjoint;Aucun;MOYEN;Violence conjugale;Police;Relais Dar El Barka 2
+86;Refus d'è‰tat Civil;13/05/2023;Dar el Barka;Mariem;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 1
+87;Refus d'è‰tat Civil;27/05/2023;Dar el Barka;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 2
+88;Refus d'è‰tat Civil;10/06/2023;Dar el Barka;Fatimetou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 1
+89;Refus d'è‰tat Civil;24/06/2023;Dar el Barka;Mintata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 2
+90;Refus d'è‰tat Civil;08/07/2023;Dar el Barka;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 1
+91;Refus d'è‰tat Civil;22/07/2023;Dar el Barka;Mariam;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 2
+92;Refus d'è‰tat Civil;05/08/2023;Dar el Barka;Nourel;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 1
+93;Refus d'è‰tat Civil;19/08/2023;Dar el Barka;Lalla;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 2
+94;Refus d'è‰tat Civil;02/09/2023;Dar el Barka;Cheikh;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 1
+95;Refus d'è‰tat Civil;16/09/2023;Dar el Barka;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais Dar El Barka 2
+96;Refus d'è‰tat Charge;17/05/2023;Dar el Barka;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais Dar El Barka 1
+97;Refus de Prise en Charge;21/05/2023;Dar el Barka;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais Dar El Barka 2
+98;Viol;12/05/2023;Ould Birome;Aissata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais commune
+99;Mariage Précoce;16/06/2023;Ould Birome;Mintou;Moins de 18 ans;Féminin;;Famille;Aucun;élève;Mariage forcé;Police;Relais commune
+100;Violence Physique Conjugale;20/07/2023;Ould Birome;Fatou;18 è  40 ans;Féminin;;Conjoint;Aucun;MOYEN;Violence conjugale;Police;Relais commune
+101;Refus d'è‰tat Civil;14/05/2023;Ould Birome;Mariam;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+102;Refus d'è‰tat Civil;28/05/2023;Ould Birome;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+103;Refus d'è‰tat Civil;11/06/2023;Ould Birome;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+104;Refus d'è‰tat Civil;25/06/2023;Ould Birome;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+105;Refus d'è‰tat Civil;09/07/2023;Ould Birome;Oumou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+106;Refus d'è‰tat Civil;23/07/2023;Ould Birome;Nourel;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+107;Refus d'è‰tat Civil;06/08/2023;Ould Birome;Lalla;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+108;Refus d'è‰tat Civil;20/08/2023;Ould Birome;Cheikh;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+109;Refus d'è‰tat Civil;03/09/2023;Ould Birome;Aminata;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+110;Refus d'è‰tat Charge;18/05/2023;Ould Birome;Khadija;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus charge;Etat Civil;Relais commune
+111;Refus de Prise en Charge;22/05/2023;Ould Birome;Fatima;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus prise en charge;Etat Civil;Relais commune
+112;Viol;13/05/2023;El Vorea;Aissata;18 è  40 ans;Féminin;;Inconnu;Aucun;élève;Viol;Police;Relais commune
+113;Mariage Précoce;17/06/2023;El Vorea;Mintou;Moins de 18 ans;Féminin;;Famille;Aucun;élève;Mariage forcé;Police;Relais commune
+114;Violence Physique Conjugale;21/07/2023;El Vorea;Fatou;18 è  40 ans;Féminin;;Conjoint;Aucun;MOYEN;Violence conjugale;Police;Relais commune
+115;Refus d'è‰tat Civil;15/05/2023;El Vorea;Mariam;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+116;Refus d'è‰tat Civil;29/05/2023;El Vorea;Salka;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+117;Refus d'è‰tat Civil;12/06/2023;El Vorea;Aicha;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
+118;Refus d'è‰tat Civil;26/06/2023;El Vorea;Zeinabou;18 è  40 ans;Féminin;;Inconnu;Aucun;FAIBLE;Refus document;Etat Civil;Relais commune
